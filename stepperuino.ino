@@ -17,6 +17,6 @@ void loop(){
    if ( v != map(val, 0, 1023, 5, 100) ) { // convert from potentiometer into speed ranges and compare it to current value of speed, if not the same
     v = map(val, 0, 1023, 5, 100); // then make a new value of speed inside the range
     stepMoto.setSpeed(v); } // speed of the motor (rotation per minute
-    stepMoto.step(1); } // move the moror 1 step per loop
+    stepMoto.step(1); } // move the motor 1 step per loop
    
   else stepMoto.step(0); } // if the button pressed the motor stop
